@@ -2,21 +2,20 @@
 // For those who want the bleeding edge
 buildscript {
     repositories {
+        //noinspection JCenterRepository
         jcenter()
-        repositories {
-            maven {
-                name = "Lss233 Mirror"
-                url = "https://mirrors.lss233.com/littleskin/minecraftforge/"
-            }
-            maven {
-                url = "https://maven.aliyun.com/repository/public"
-            }
-            maven {
-                name = "Forge"
-                url = "https://maven.minecraftforge.net/"
-            }
-            mavenCentral()
+        maven {
+            name = "Lss233 Mirror"
+            url = "https://mirrors.lss233.com/littleskin/minecraftforge/"
         }
+        maven {
+            url = "https://maven.aliyun.com/repository/public"
+        }
+        maven {
+            name = "Forge"
+            url = "https://maven.minecraftforge.net/"
+        }
+        mavenCentral()
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
@@ -30,7 +29,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.1.0"
+version = "1.2.0"
 group= "com.example.customcapes" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "customcapes"
 
@@ -89,4 +88,7 @@ processResources
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
