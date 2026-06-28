@@ -2,9 +2,9 @@
 	"modid": "customcapes",
 	"name": "Custom Capes Mod",
 	"description": [
-		"Custom your own cape in your local game. The cape, which custom by yourself, could not be seen in multiple games."z
+		"Custom your own cape in your local game. The cape, which custom by yourself, could not be seen in multiple games.",
 		"Use /reloadcapes to reload cape in game."
-	]
+	],
 	"version": "1.2.0",
 	"mcversion": "1.8.9",
 	"authorList": ["FN_edgeGD"]

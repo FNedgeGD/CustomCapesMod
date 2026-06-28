@@ -16,7 +16,7 @@ import java.util.Properties;
 @Mod(modid = CustomCapesMod.MODID, version = CustomCapesMod.VERSION, clientSideOnly = true, guiFactory = "com.example.customcapes.CapesGuiFactory")
 public class CustomCapesMod {
 	public static final String MODID = "customcapes";
-	public static final String VERSION = "1.0.0";
+	public static final String VERSION = "1.2.0";
 
 	public static File capeFolder;
 	public static boolean enabled = true;
